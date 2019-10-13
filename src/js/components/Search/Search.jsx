@@ -18,6 +18,7 @@ export default class Search extends React.Component {
         dispatch(updateMovie(value));
     }
 
+    
     handleSearch(e) {
         e.preventDefault();
         const { dispatch, movieSearch } = this.props;
