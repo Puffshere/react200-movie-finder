@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import searchReducer from './components/Search/SearchReducer';
-import detailReducer from './components/Detail/detailReducer';
+import searchReducer from './components/SearchTitle/SearchReducer';
+import detailReducer from './components/MovieDetails/detailReducer';
 
 const rootReducer = combineReducers({
     search: searchReducer,

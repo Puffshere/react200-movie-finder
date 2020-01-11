@@ -9,15 +9,15 @@ export default class Result extends React.Component {
     render() {
         const { movies } = this.props;
         return (
-            <div className='container m-0 p-0'>
-                <div className='row'>
-                    <h4 className='col-2'>Results:</h4>
-                </div>
+            <div className='container'>
+                
+                    <h4 className='boat'>Selected Titles:</h4>
+                
                 <ul className='row justify-content-center p-0 m-0'>
                     {
                         movies ?
                         movies.map(movie => (
-                            <li className='bg-light border border-dark col-12 mt-3 mb-3'>
+                            <li className= 'pop text-white border border-dark col-12 mt-3 mb-3'>
                                 <div className='container'>
                                     <div className='row'>
                                         <img className='col-3 mt-3 mb-3' src={movie.Poster}></img>
@@ -25,14 +25,14 @@ export default class Result extends React.Component {
                                             <h5>{movie.Title}</h5>
                                             <p>{movie.Year}</p>
                                             <hr></hr>
-                                            <Link className='detail-link' to={`/movie/${movie.imdbID}`}>Read more</Link>
+                                            <Link className='detail-link moose' to={`/movie/${movie.imdbID}`}>More Info</Link>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                         ))
                         :
-                        <h1 className='error-message'>Movie not found!</h1>
+                        <h1 className='error-message boat'>Your Movie Is Imaginary!</h1>
                     }
                 </ul>
             </div>

@@ -5,7 +5,7 @@ import {
     getMovie
  } from './searchActions'
 
-export default class Search extends React.Component {
+class Search extends React.Component {
     constructor(props) {
         super(props);
         this.handleMovieInput = this.handleMovieInput.bind(this);
@@ -18,7 +18,7 @@ export default class Search extends React.Component {
         dispatch(updateMovie(value));
     }
 
-    
+
     handleSearch(e) {
         e.preventDefault();
         const { dispatch, movieSearch } = this.props;
@@ -32,9 +32,9 @@ export default class Search extends React.Component {
                 <form onSubmit={ this.handleSearch } >
                     <div className='row'>
                         <div className='input-group'>
-                            <input auto-complete='false' required type='text' className='form-control' name='' placeholder='Search' value={ movieSearch } onChange={ this.handleMovieInput }/>
+                            <input required type='text' className='form-control slang text-white' name='' placeholder='Search' value={ movieSearch } onChange={ this.handleMovieInput }/>
                             <div className='input-group-append'>
-                                <button className='btn btn-outline-secondary' id='search' type='submit'>Go!</button>
+                                <button className='btn animal text-white' id='search' type='submit'>Go!</button>
                             </div>
                         </div>
                     </div>
@@ -43,3 +43,5 @@ export default class Search extends React.Component {
         )
     }
 }
+
+export default Search;

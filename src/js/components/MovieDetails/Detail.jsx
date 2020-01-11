@@ -15,7 +15,7 @@ export default class Result extends React.Component {
     render() {
         const { movie } = this.props;
         return (
-            <div className='container card mt-3 mb-3 p-0'>
+            <div className='container card mt-3 mb-3 p-0 space'>
                 <div className='card-body'>
                     <div className='container'>
                         <div className='row'>
@@ -32,7 +32,7 @@ export default class Result extends React.Component {
                                 <h6 className='metascore'>Metascore: {movie.Metascore}/100</h6>
                                 <h6>IMDB: {movie.imdbRating}/10</h6>
                                 <br></br>
-                                <Link className='home-link' to='/'>Return to Search</Link>
+                                <Link className='home-link sun' to='/'>Return to Search</Link>
                             </div>
                         </div>
                     </div>

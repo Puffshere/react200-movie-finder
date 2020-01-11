@@ -1,7 +1,7 @@
 
 import React from 'react';
-import Search from '../components/Search';
-import Result from '../components/Result';
+import Search from '../components/SearchTitle';
+import Result from '../components/ResultOfSearch';
 
 class MovieSearchContainer extends React.Component {
     constructor(props) {
@@ -10,18 +10,26 @@ class MovieSearchContainer extends React.Component {
 
     render() {
         return (
+            <div style={{ backgroundImage: 'url("image.png")', height: "120vh"}}>
             <div className='container'>
-                <div className='row justify-content-center'>
-                    <div className='col-12 heading jumbotron text-dark bg-light mt-3'>
-                        <h1 className='display-4'>Movie Finder</h1>
+                <br></br>
+                <br></br>
+                <div className='row'>
+                    <div className='col-12 slang'>
+                        <h1 className='cat'>Movie Finder</h1>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
                 <div className='row mb-4'>
                     <Search className='col-12' />
                 </div>
+                <br></br>
+                <br></br>
                 <div className='row justify-content-center'>
                     <Result className='col-12' />
                 </div>
+            </div>
             </div>
         )
     }

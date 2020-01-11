@@ -11,7 +11,7 @@ import MovieDetailContainer from './MovieDetailContainer';
 
 export default () => (
     <Router>
-        <div className='container'>
+        <div className='container' >
             <Route exact path='/' component={MovieSearchContainer} />
             <Route path='/movie/:id' component={MovieDetailContainer} />
         </div>

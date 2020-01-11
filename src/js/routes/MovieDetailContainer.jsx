@@ -1,6 +1,6 @@
   
 import React from 'react';
-import Detail from '../components/Detail'
+import Detail from '../components/MovieDetails'
 
 class MovieDetailContainer extends React.Component {
     constructor(props) {
