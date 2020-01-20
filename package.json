@@ -5,14 +5,13 @@
   "main": "server/index.js",
   "scripts": {
     "build": "npm run less && webpack",
-    "start": "node server/index.js",
+    "start": "npm run build && node server/index.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
     "test": "npm run build && mocha test/setup.js test/*.spec.js --exit"
-},
-
+  },
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.16.2",
     "babel": "^6.3.26",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.7.0",
@@ -20,8 +19,8 @@
     "babel-preset-stage-3": "^6.24.1",
     "babel-register": "^6.4.3",
     "bluebird": "^3.5.0",
-    "dotenv": "^6.1.0",
-    "express": "^4.15.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
     "file-loader": "^0.11.2",
     "json-loader": "^0.5.4",
     "less": "^3.8.1",
